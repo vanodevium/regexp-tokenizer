@@ -1,0 +1,32 @@
+{
+  "name": "ret",
+  "description": "Tokenize a string that represents a regular expression.",
+  "keywords": [
+    "regex",
+    "regexp",
+    "regular expression",
+    "parser",
+    "tokenizer"
+  ],
+  "version": "0.0.1",
+  "main": "./lib/index.js",
+  "types": "./typings/index.d.ts",
+  "files": [
+    "lib",
+    "typings"
+  ],
+  "scripts": {
+    "test": "nyc --extension --reporter=lcov --reporter=text-summary vows -- --spec test/*-test.js"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "devDependencies": {
+    "nyc": "^15.0.0",
+    "vows": "^0.8.3"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "license": "MIT"
+}
